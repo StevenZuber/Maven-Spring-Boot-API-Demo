@@ -8,7 +8,7 @@ public class ZeplinApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ZeplinApplication.class, args);
-		System.out.println("Hello world");
+		System.out.println("\nNavigate to http://localhost:8080/ to see the list of endpoints");
 	}
 
 }
