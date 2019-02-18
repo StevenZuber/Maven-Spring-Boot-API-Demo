@@ -8,17 +8,18 @@ import org.springframework.web.bind.annotation.RestController;
 import zeplin.contract.com.service.ServiceOrderService;
 
 @RestController
+@RequestMapping(value = "/contracts/serviceOrders")
 public class ServiceOrderController {
 
     @Autowired
     ServiceOrderService serviceOrderService;
 
 
-    @RequestMapping(value = ("/contracts/serviceOrders"), method = RequestMethod.GET)
+    @RequestMapping(value = ("/"), method = RequestMethod.GET)
     public String getAllServiceOrderContracts(){
         return "Hello service orders!!";
     }
-    @RequestMapping(value = ("/contracts/serviceOrders/{id}"), method = RequestMethod.GET)
+    @RequestMapping(value = ("/{id}"), method = RequestMethod.GET)
     public String getServiceOrderContractById(@PathVariable("id") int id){
         return "Hello single service order!!";
     }

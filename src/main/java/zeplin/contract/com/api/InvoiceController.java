@@ -7,17 +7,18 @@ import org.springframework.web.bind.annotation.RestController;
 import zeplin.contract.com.service.InvoiceService;
 
 @RestController
+@RequestMapping("/invoices")
 public class InvoiceController {
 
     @Autowired
     InvoiceService invoiceService;
 
 
-    @RequestMapping(value = ("/invoices"), method = RequestMethod.GET)
+    @RequestMapping(value = ("/"), method = RequestMethod.GET)
     public String getAllInvoices(){
         return "Hello invoices!!";
     }
-    @RequestMapping(value = ("/invoices/{id}"), method = RequestMethod.GET)
+    @RequestMapping(value = ("/{id}"), method = RequestMethod.GET)
     public String getInvoiceById(){
         return "Hello single invoice!!";
     }

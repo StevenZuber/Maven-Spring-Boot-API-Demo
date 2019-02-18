@@ -15,6 +15,7 @@ import javax.persistence.Entity;
 @EnableAutoConfiguration  // Sprint Boot Auto Configuration
 @ComponentScan(basePackages = "zeplin.contract.com")
 @EntityScan("zeplin.contract.com.domain")
+@EnableJpaRepositories("zeplin.contract.repository.dao")
 public class ZeplinApplication {
 
 	public static void main(String[] args) {
