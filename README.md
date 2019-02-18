@@ -4,7 +4,7 @@ This is a sample Java / Maven / Spring Boot application that allows the user to 
 
 ## How to Run 
 
-####Note: this application currently doesn't run as there is a bean autowire issue that I am having difficulty resolving
+###Note: this application currently doesn't run as there is a bean autowire issue that I am having difficulty resolving
 
 * Clone this repository 
 * Make sure you are using JDK 1.8 and Maven 3.6
