@@ -1,4 +1,4 @@
-# Spring Boot Microservice Example Project for GCI Homework
+# Spring Boot Microservice Example Project for take-home assessment
 
 This is a sample Java / Maven / Spring Boot application that allows the user to see a list of contracts, defined per the requirements of the assignment
 
